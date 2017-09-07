@@ -30,7 +30,7 @@
   "extra": {
     "contao": {
       "sources": {
-        "contao": "system/modules/textfield-multiple"
+        "contao": "system/modules/textfield_multiple"
       }
     }
   }

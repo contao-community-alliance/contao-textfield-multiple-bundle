@@ -1,0 +1,15 @@
+<?php $this->extend('form_textfield'); ?>
+
+<?php $this->block('field'); ?>
+<?php if ($this->hasErrors()): ?>
+    <p class="error"><?= $this->getErrorAsString() ?></p>
+<?php endif; ?>
+
+<?php for ($i=0; $i<$this->size; $i++): ?>
+<input type="<?= $this->type ?>" name="<?= $this->name . '[]' ?>" id="ctrl_<?= $this->id ?>_<?= $i ?>" class="text<?php if ($this->hideInput) echo ' password'; ?><?php if ($this->class) echo ' ' . $this->class; ?>" value="<?= specialchars($this->value[$i]) ?>"<?= $this->getAttributes() ?>>
+<?php endfor; ?>
+
+<?php if ($this->addSubmit): ?>
+    <input type="submit" id="ctrl_<?= $this->id ?>_submit" class="submit" value="<?= $this->slabel ?>">
+<?php endif; ?>
+<?php $this->endblock(); ?>
