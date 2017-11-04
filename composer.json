@@ -18,13 +18,13 @@
     "source": "https://github.com/richardhj/contao-textfield-multiple"
   },
   "require": {
-    "php": "^5.4 || ^7.0",
+    "php": "^5.5 || ^7.0",
     "contao/core": "^3.1",
     "contao-community-alliance/composer-plugin": "^2.4"
   },
   "autoload": {
     "psr-4": {
-      "Richardhj\\Contao\\": "src/"
+      "Richardhj\\Contao\\Widget\\": "src/"
     }
   },
   "extra": {

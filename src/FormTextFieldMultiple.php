@@ -11,7 +11,7 @@
  * @license   https://github.com/richardhj/contao-textfield-multiple/blob/master/LICENSE LGPL-3.0
  */
 
-namespace Richardhj\Contao;
+namespace Richardhj\Contao\Widget;
 
 use Contao\FormTextField;
 

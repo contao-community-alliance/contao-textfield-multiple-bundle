@@ -12,4 +12,6 @@
  */
 
 
-$GLOBALS['TL_FFL']['text_multiple'] = 'Richardhj\Contao\FormTextFieldMultiple';
+use Richardhj\Contao\Widget\FormTextFieldMultiple;
+
+$GLOBALS['TL_FFL']['text_multiple'] = FormTextFieldMultiple::class;
