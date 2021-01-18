@@ -26,8 +26,7 @@ use Contao\ManagerBundle\ContaoManagerBundle;
 use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
 use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
 use Contao\ManagerPlugin\Bundle\Parser\ParserInterface;
-use MenAtWork\MultiColumnWizardBundle\MultiColumnWizardBundle;
-use ContaoCommunityAlliance\MultiColumnWizardFrontendBundle\FormTextFieldMultipleBundle;
+use ContaoCommunityAlliance\FormTextFieldMultipleBundle\FormTextFieldMultipleBundle;
 
 /**
  * Class Plugin
@@ -44,8 +43,7 @@ class Plugin implements BundlePluginInterface
                 ->setLoadAfter(
                     [
                         ContaoCoreBundle::class,
-                        ContaoManagerBundle::class,
-                        MultiColumnWizardBundle::class,
+                        ContaoManagerBundle::class
                     ]
                 ),
         ];
