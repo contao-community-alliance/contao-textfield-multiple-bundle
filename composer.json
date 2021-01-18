@@ -28,7 +28,8 @@
   },
   "require-dev": {
     "phpcq/all-tasks": "~1.2",
-    "contao/manager-bundle": "~4.9"
+    "contao/manager-bundle": "~4.9",
+    "contao-community-alliance/dc-general-contao-frontend": "^2.1"
   },
   "autoload": {
     "psr-4": {

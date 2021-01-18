@@ -19,62 +19,50 @@
  * @filesource
  */
 
+declare(strict_types=1);
+
 namespace ContaoCommunityAlliance\FormTextFieldMultipleBundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Contao\CoreBundle\DependencyInjection\Configuration;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
+use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 use Symfony\Component\HttpKernel\DependencyInjection\ConfigurableExtension;
 
-class FormTextFieldMultipleBundleExtension extends ConfigurableExtension
+final class FormTextFieldMultipleExtension extends Extension
 {
     /**
-     * The config files.
-     *
-     * @var array
-     */
-    private $files = [
-        // 'listener.yml',
-        // 'services.yml',
-    ];
-
-    /**
      * {@inheritdoc}
      */
-    public function getAlias()
-    {
-        return 'textfield-multiple-bundle';
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function getConfiguration(array $config, ContainerBuilder $container)
-    {
+    #public function getConfiguration(array $config, ContainerBuilder $container)
+    #{
         // Add the resource to the container
-        parent::getConfiguration($config, $container);
+    #    parent::getConfiguration($config, $container);
 
-        return new Configuration(
-            $container->getParameter('kernel.debug'),
-            $container->getParameter('kernel.project_dir'),
-            $container->getParameter('kernel.root_dir'),
-            $container->getParameter('kernel.default_locale')
-        );
-    }
+     #   return new Configuration(
+     #       $container->getParameter('kernel.debug'),
+     #       $container->getParameter('kernel.project_dir'),
+     #       $container->getParameter('kernel.root_dir'),
+     #       $container->getParameter('kernel.default_locale')
+     #   );
+    #}
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
-    protected function loadInternal(array $mergedConfig, ContainerBuilder $container)
+    /*protected function loadInternal(array $mergedConfig, ContainerBuilder $container): void
     {
-        $loader = new YamlFileLoader(
-            $container,
-            new FileLocator(__DIR__ . '/../Resources/config')
-        );
+        $loader = new YamlFileLoader($container, new FileLocator(\dirname(__DIR__) . '/Resources/config'));
+        $loader->load('services.yml');
+    }*/
 
-        foreach ($this->files as $file) {
-            $loader->load($file);
-        }
+    /**
+     * {@inheritDoc}
+     */
+    public function load(array $configs, ContainerBuilder $container): void
+    {
+        $loader = new YamlFileLoader($container, new FileLocator(\dirname(__DIR__) . '/Resources/config'));
+        $loader->load('services.yml');
     }
 }

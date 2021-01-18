@@ -21,11 +21,11 @@
 
 namespace ContaoCommunityAlliance\FormTextFieldMultipleBundle\ContaoManager;
 
-use Contao\CoreBundle\ContaoCoreBundle;
 use Contao\ManagerBundle\ContaoManagerBundle;
 use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
 use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
 use Contao\ManagerPlugin\Bundle\Parser\ParserInterface;
+use ContaoCommunityAlliance\DcGeneral\ContaoFrontend\CcaDcGeneralContaoFrontendBundle;
 use ContaoCommunityAlliance\FormTextFieldMultipleBundle\FormTextFieldMultipleBundle;
 
 /**
@@ -36,14 +36,14 @@ class Plugin implements BundlePluginInterface
     /**
      * {@inheritdoc}
      */
-    public function getBundles(ParserInterface $parser)
+    public function getBundles(ParserInterface $parser): array
     {
         return [
             BundleConfig::create(FormTextFieldMultipleBundle::class)
                 ->setLoadAfter(
                     [
-                        ContaoCoreBundle::class,
-                        ContaoManagerBundle::class
+                        ContaoManagerBundle::class,
+                        CcaDcGeneralContaoFrontendBundle::class
                     ]
                 ),
         ];

@@ -19,6 +19,8 @@
  * @filesource
  */
 
+declare(strict_types=1);
+
 namespace ContaoCommunityAlliance\FormTextFieldMultipleBundle\Contao\Widget;
 
 use Contao\FormTextField;
