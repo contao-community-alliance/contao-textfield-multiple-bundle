@@ -56,7 +56,8 @@ final class TextFieldMultiple
     private function wantForInvoke(BuildWidgetEvent $event): bool
     {
         $property = $event->getProperty();
-        $extra = $property->getExtra();
+        $extra    = $property->getExtra();
+
         return ('text' === $property->getWidgetType())
                && isset($extra['multiple'])
                && (true === $extra['multiple']);
