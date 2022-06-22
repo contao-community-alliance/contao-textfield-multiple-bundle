@@ -9,7 +9,7 @@
     "metamodels",
     "cca"
   ],
-  "homepage": "http://c-c-a.org/",
+  "homepage": "https://c-c-a.org/",
   "license": "LGPL-3.0-or-later",
   "authors": [
     {
@@ -23,13 +23,13 @@
     "source": "https://github.com/contao-community-alliance/contao-textfield-multiple-bundle"
   },
   "require": {
-    "php": "^7.2",
+    "php": "^7.4",
     "contao/core-bundle": "^4.9.0, <4.13.0"
   },
   "require-dev": {
     "phpcq/all-tasks": "~1.2",
     "contao/manager-bundle": "~4.9",
-    "contao-community-alliance/dc-general-contao-frontend": "^2.1"
+    "contao-community-alliance/dc-general-contao-frontend": "^2.2"
   },
   "autoload": {
     "psr-4": {
@@ -47,5 +47,4 @@
       "dev-feature/2.2.0": "2.2.x-dev"
     }
   }
-
 }
