@@ -1,14 +1,9 @@
-# Contao FormTextField with `size` support
+[![Build Status](https://github.com/contao-community-alliance/contao-textfield-multiple-bundle/actions/workflows/diagnostics.yml/badge.svg)](https://github.com/contao-community-alliance/contao-textfield-multiple-bundle/actions)
+[![Latest Version tagged](http://img.shields.io/github/tag/contao-community-alliance/contao-textfield-multiple-bundle.svg)](https://github.com/contao-community-alliance/contao-textfield-multiple-bundle/tags)
+[![Latest Version on Packagist](http://img.shields.io/packagist/v/contao-community-alliance/contao-textfield-multiple-bundle.svg)](https://packagist.org/packages/contao-community-alliance/contao-textfield-multiple-bundle)
+[![Installations via composer per month](http://img.shields.io/packagist/dm/contao-community-alliance/contao-textfield-multiple-bundle.svg)](https://packagist.org/packages/contao-community-alliance/contao-textfield-multiple-bundle)
 
-[![Latest Version on Packagist][ico-version]][link-packagist]
-[![Software License][ico-license]]()
-[![Dependency Status][ico-dependencies]][link-dependencies]
+# Contao FormTextField with `multiple` and `size` support for frontend
 
-A new widget "text_multiple" based on the "text" widget (`FormTextField`) that enables the support of `$widget['eval']['multiple']` and `$widget['eval']['size']` as in the backend.
-
-[ico-version]: https://img.shields.io/packagist/v/richardhj/contao-textfield-multiple.svg?style=flat-square
-[ico-license]: https://img.shields.io/badge/license-LGPL-brightgreen.svg?style=flat-square
-[ico-dependencies]: https://www.versioneye.com/php/richardhj:contao-textfield-multiple/badge.svg?style=flat-square
-
-[link-packagist]: https://packagist.org/packages/richardhj/contao-textfield-multiple
-[link-dependencies]: https://www.versioneye.com/php/richardhj:contao-textfield-multiple
+A new widget "text_multiple" based on the "text" widget (`FormTextField`) that enables the support
+of `$widget['eval']['multiple']` and `$widget['eval']['size']` as in the backend.

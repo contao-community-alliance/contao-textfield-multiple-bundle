@@ -1,29 +1,32 @@
 <?php
 
 /**
- * This file is part of richardhj/contao-textfield-multiple.
+ * This file is part of contao-community-alliance/contao-textfield-multiple-bundle.
  *
- * Copyright (c) 2017 Richard Henkenjohann
+ * (c) 2021 Contao Community Alliance.
  *
- * @package   richardhj/contao-textfield-multiple
- * @author    Richard Henkenjohann <richardhenkenjohann@googlemail.com>
- * @copyright 2017 Richard Henkenjohann
- * @license   https://github.com/richardhj/contao-textfield-multiple/blob/master/LICENSE LGPL-3.0
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ * This project is provided in good faith and hope to be usable by anyone.
+ *
+ * @package    contao-community-alliance/contao-textfield-multiple-bundle
+ * @author     Richard Henkenjohann <richardhenkenjohann@googlemail.com>
+ * @author     Ingolf Steinhardt <info@e-spin.de>
+ * @copyright  2021 Contao Community Alliance.
+ * @license    https://github.com/contao-community-alliance/contao-community-alliance/contao-textfield-multiple-bundle/blob/master/LICENSE
+ *             LGPL-3.0-or-later
+ * @filesource
  */
 
-namespace Richardhj\Contao\Widget;
+declare(strict_types=1);
+
+namespace ContaoCommunityAlliance\FormTextFieldMultipleBundle\Contao\Widget;
 
 use Contao\FormTextField;
 
-
-/**
- * Class FormTextFieldMultiple
- *
- * @package Richardhj\Contao
- */
 class FormTextFieldMultiple extends FormTextField
 {
-
     /**
      * Template
      *
