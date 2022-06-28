@@ -3,7 +3,7 @@
   "type": "contao-bundle",
   "description": "Contao FormTextField with eval multiple and size support",
   "keywords": [
-    "src/Resources/contao",
+    "contao resources",
     "frontend",
     "frontendediting",
     "metamodels",
@@ -44,7 +44,8 @@
   "extra": {
     "contao-manager-plugin": "ContaoCommunityAlliance\\FormTextFieldMultipleBundle\\ContaoManager\\Plugin",
     "branch-alias": {
-      "dev-feature/2.2.0": "2.2.x-dev"
+      "dev-support/1.0.x": "1.0.x-dev",
+      "dev-master": "2.2.x-dev"
     }
   }
 }
