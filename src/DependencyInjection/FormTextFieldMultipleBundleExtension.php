@@ -45,6 +45,9 @@ class FormTextFieldMultipleBundleExtension extends Extension
         #);
     }
 
+    /**
+     * {@inheritdoc}
+     */
     public function load(array $configs, ContainerBuilder $container)
     {
         $loader = new YamlFileLoader($container, new FileLocator(\dirname(__DIR__) . '/Resources/config'));
