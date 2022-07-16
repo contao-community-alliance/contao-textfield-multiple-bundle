@@ -3,7 +3,7 @@
   "type": "contao-bundle",
   "description": "Contao FormTextField with eval multiple and size support",
   "keywords": [
-    "src/Resources/contao",
+    "resources-contao",
     "frontend",
     "frontendediting",
     "metamodels",
