@@ -3,7 +3,7 @@
 /**
  * This file is part of contao-community-alliance/contao-textfield-multiple-bundle.
  *
- * (c) 2021 Contao Community Alliance.
+ * (c) 2022 Contao Community Alliance.
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -13,7 +13,7 @@
  * @package    contao-community-alliance/contao-textfield-multiple-bundle
  * @author     Richard Henkenjohann <richardhenkenjohann@googlemail.com>
  * @author     Ingolf Steinhardt <info@e-spin.de>
- * @copyright  2021 Contao Community Alliance.
+ * @copyright  2022 Contao Community Alliance.
  * @license    https://github.com/contao-community-alliance/contao-community-alliance/contao-textfield-multiple-bundle/blob/master/LICENSE
  *             LGPL-3.0-or-later
  * @filesource
@@ -21,7 +21,7 @@
 
 namespace ContaoCommunityAlliance\FormTextFieldMultipleBundle\DependencyInjection;
 
-use Symfony\Component\Config\FileLocator;
+use Symfony\Contracts\Config\FileLocator;
 use Contao\CoreBundle\DependencyInjection\Configuration;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
