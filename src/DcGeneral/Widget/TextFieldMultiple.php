@@ -11,7 +11,6 @@
  * This project is provided in good faith and hope to be usable by anyone.
  *
  * @package    contao-community-alliance/contao-textfield-multiple-bundle
- * @author     Richard Henkenjohann <richardhenkenjohann@googlemail.com>
  * @author     Ingolf Steinhardt <info@e-spin.de>
  * @copyright  2021 - 2022 Contao Community Alliance.
  * @license    https://github.com/contao-community-alliance/contao-community-alliance/contao-textfield-multiple-bundle/blob/master/LICENSE
