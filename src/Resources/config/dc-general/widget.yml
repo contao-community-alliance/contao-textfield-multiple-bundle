@@ -1,7 +1,7 @@
 services:
-    ContaoCommunityAlliance\FormTextFieldMultipleBundle\DcGeneral\Widget\TextFieldMultiple:
-        public: false
-        tags:
-            -   name: kernel.event_listener
-                event: dc-general.contao-frontend.build-widget
-                priority: 512
+  ContaoCommunityAlliance\FormTextFieldMultipleBundle\DcGeneral\Widget\TextFieldMultiple:
+    public: false
+    tags:
+      - name: kernel.event_listener
+        event: dc-general.contao-frontend.build-widget
+        priority: 512
