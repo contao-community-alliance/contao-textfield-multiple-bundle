@@ -23,7 +23,7 @@ declare(strict_types=1);
 
 namespace ContaoCommunityAlliance\FormTextFieldMultipleBundle\Contao\Widget;
 
-use Contao\FormTextField;
+use Contao\FormText;
 
 /**
  * This class is used for the contao frontend view as template.
@@ -31,14 +31,14 @@ use Contao\FormTextField;
  * @psalm-suppress PropertyNotSetInConstructor
  * @psalm-suppress UndefinedThisPropertyFetch
  */
-class FormTextFieldMultiple extends FormTextField
+class FormTextFieldMultiple extends FormText
 {
     /**
      * Template
      *
      * @var string
      */
-    protected $strTemplate = 'form_textfield_multiple';
+    protected $strTemplate = 'form_text_multiple';
 
     /**
      * Parse the template file and return it as string
@@ -50,7 +50,7 @@ class FormTextFieldMultiple extends FormTextField
     public function parse($arrAttributes = null): string
     {
         if (!$this->multiple) {
-            $this->strTemplate = 'form_textfield';
+            $this->strTemplate = 'form_text';
         }
 
         return parent::parse($arrAttributes);
