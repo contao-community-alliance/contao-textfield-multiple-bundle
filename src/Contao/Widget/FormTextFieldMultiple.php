@@ -3,7 +3,7 @@
 /**
  * This file is part of contao-community-alliance/contao-textfield-multiple-bundle.
  *
- * (c) 2021-2024 Contao Community Alliance.
+ * (c) 2021-2026 Contao Community Alliance.
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -13,7 +13,7 @@
  * @package    contao-community-alliance/contao-textfield-multiple-bundle
  * @author     Richard Henkenjohann <richardhenkenjohann@googlemail.com>
  * @author     Ingolf Steinhardt <info@e-spin.de>
- * @copyright  2021-2024 Contao Community Alliance.
+ * @copyright  2021-2026 Contao Community Alliance.
  * @license    https://github.com/contao-community-alliance/contao-community-alliance/contao-textfield-multiple-bundle/blob/master/LICENSE
  *             LGPL-3.0-or-later
  * @filesource
@@ -27,6 +27,8 @@ use Contao\FormText;
 
 /**
  * This class is used for the contao frontend view as template.
+ *
+ * @final
  *
  * @psalm-suppress PropertyNotSetInConstructor
  * @psalm-suppress UndefinedThisPropertyFetch
@@ -47,6 +49,7 @@ class FormTextFieldMultiple extends FormText
      *
      * @return string The template markup
      */
+    #[\Override]
     public function parse($arrAttributes = null): string
     {
         if (!$this->multiple) {
@@ -61,6 +64,7 @@ class FormTextFieldMultiple extends FormText
      *
      * @return string
      */
+    #[\Override]
     public function generate(): string
     {
         if (!$this->multiple) {

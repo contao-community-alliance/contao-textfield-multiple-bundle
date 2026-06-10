@@ -15,6 +15,11 @@
       "name": "Richard Henkenjohann",
       "email": "richardhenkenjohann@googlemail.com",
       "role": "Developer"
+    },
+    {
+      "name": "Ingolf Steinhardt",
+      "email": "info@e-spin.de",
+      "role": "Developer"
     }
   ],
   "homepage": "https://c-c-a.org/",
@@ -23,15 +28,19 @@
     "source": "https://github.com/contao-community-alliance/contao-textfield-multiple-bundle"
   },
   "require": {
-    "php": "^8.2",
-    "contao-community-alliance/dc-general-contao-frontend": "^2.4@dev",
-    "contao/core-bundle": "^5.3 <5.7",
-    "symfony/config": "^6.4",
-    "symfony/dependency-injection": "^6.4",
-    "symfony/http-kernel": "^6.4"
+    "php": "^8.4",
+    "contao-community-alliance/dc-general": "^2.5@dev",
+    "contao-community-alliance/dc-general-contao-frontend": "^2.5@dev",
+    "contao-community-alliance/events-contao-bindings": "^5.0",
+    "contao-community-alliance/translator": "^2.5",
+    "contao-community-alliance/url-builder": "^2.0",
+    "contao/core-bundle": "^5.7",
+    "symfony/config": "^7.4",
+    "symfony/dependency-injection": "^7.4",
+    "symfony/http-kernel": "^7.4"
   },
   "require-dev": {
-    "contao/manager-bundle": "2.8",
+    "contao/manager-plugin": "^2.8",
     "phpcq/runner-bootstrap": "^1.0@dev",
     "roave/security-advisories": "dev-latest"
   },
@@ -54,7 +63,7 @@
   },
   "extra": {
     "branch-alias": {
-      "dev-feature/2.4.0": "2.4.x-dev"
+      "dev-feature/2.5.0": "2.5.x-dev"
     },
     "contao-manager-plugin": "ContaoCommunityAlliance\\FormTextFieldMultipleBundle\\ContaoManager\\Plugin"
   }
