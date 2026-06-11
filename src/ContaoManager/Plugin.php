@@ -22,12 +22,12 @@ declare(strict_types=1);
 
 namespace ContaoCommunityAlliance\FormTextFieldMultipleBundle\ContaoManager;
 
-use Contao\ManagerBundle\ContaoManagerBundle;
+use ContaoCommunityAlliance\DcGeneral\ContaoFrontend\CcaDcGeneralContaoFrontendBundle;
+use ContaoCommunityAlliance\FormTextFieldMultipleBundle\FormTextFieldMultipleBundle;
+use Contao\CoreBundle\ContaoCoreBundle;
 use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
 use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
 use Contao\ManagerPlugin\Bundle\Parser\ParserInterface;
-use ContaoCommunityAlliance\DcGeneral\ContaoFrontend\CcaDcGeneralContaoFrontendBundle;
-use ContaoCommunityAlliance\FormTextFieldMultipleBundle\FormTextFieldMultipleBundle;
 
 /**
  * @final
@@ -44,7 +44,7 @@ class Plugin implements BundlePluginInterface
             BundleConfig::create(FormTextFieldMultipleBundle::class)
                 ->setLoadAfter(
                     [
-                        ContaoManagerBundle::class,
+                        ContaoCoreBundle::class,
                         CcaDcGeneralContaoFrontendBundle::class
                     ]
                 ),
