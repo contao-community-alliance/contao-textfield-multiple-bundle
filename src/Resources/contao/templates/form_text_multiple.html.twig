@@ -1,0 +1,49 @@
+{#
+    Twig variant of form_text_multiple.html5.
+
+    Contao renders this one instead of the legacy template as soon as it exists - see
+    TemplateInheritance::renderTwigSurrogateIfExists(). The legacy file stays as the fallback for
+    setups that override it, and both must keep producing the same markup.
+
+    Modelled on Contao's own form_text.html.twig; the difference is the loop, which renders one
+    input per value with "first" and "last" on the outer ones.
+#}
+{% extends '@Contao/form_row.html.twig' %}
+
+{% block label %}
+    {% if this.label %}
+        <label for="ctrl_{{ this.id }}"{% if this.class|default %} class="{{ this.class|default }}"{% endif %}>
+            {% if this.mandatory|default %}
+                <span class="invisible">{{ this.mandatoryField }} </span>{{ this.label|insert_tag_raw }}<span class="mandatory">*</span>
+            {% else %}
+                {{ this.label|insert_tag_raw }}
+            {% endif %}
+        </label>
+    {% endif %}
+{% endblock %}
+
+{% block field %}
+    {% if hasErrors.invoke() %}
+        <p class="error">{{ getErrorAsString.invoke() }}</p>
+    {% endif %}
+
+    {# A single value is not iterable - the legacy template casts to array for the same reason. #}
+    {% set values = this.value is iterable ? this.value : (this.value is null ? [] : [this.value]) %}
+    {% set input_attributes = attrs(getAttributes.invoke()) %}
+
+    {% for value in values %}
+        <input{{ attrs()
+            .set('type', this.type)
+            .set('name', "#{this.name}[]")
+            .set('id', "ctrl_#{this.id}_#{loop.index0}")
+            .addClass('text')
+            .addClass('password', this.hideInput|default)
+            .addClass(this.class|default)
+            .addClass('first', loop.first)
+            .addClass('last', loop.last)
+            .set('value', value)
+            .mergeWith(input_attributes)
+            .setIfExists('placeholder', input_attributes.placeholder|default|insert_tag)
+        }}>
+    {% endfor %}
+{% endblock %}
