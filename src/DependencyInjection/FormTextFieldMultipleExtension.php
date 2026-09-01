@@ -22,6 +22,7 @@ declare(strict_types=1);
 
 namespace ContaoCommunityAlliance\FormTextFieldMultipleBundle\DependencyInjection;
 
+use Symfony\Component\Config\Definition\ConfigurationInterface;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
@@ -36,10 +37,10 @@ class FormTextFieldMultipleExtension extends Extension
      * {@inheritdoc}
      */
     #[\Override]
-    public function getConfiguration(array $config, ContainerBuilder $container)
+    public function getConfiguration(array $config, ContainerBuilder $container): ?ConfigurationInterface
     {
         // Add the resource to the container
-        parent::getConfiguration($config, $container);
+        return parent::getConfiguration($config, $container);
     }
 
     /**
