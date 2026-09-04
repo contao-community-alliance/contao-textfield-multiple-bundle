@@ -30,11 +30,11 @@
   "require": {
     "php": "^8.4",
     "contao-community-alliance/dc-general": "^2.6@dev",
-    "contao-community-alliance/dc-general-contao-frontend": "^2.5@dev",
-    "contao-community-alliance/events-contao-bindings": "^6.3",
-    "contao-community-alliance/translator": "^2.7",
-    "contao-community-alliance/url-builder": "^2.0",
-    "contao/core-bundle": "^5.7 || ^6.0",
+    "contao-community-alliance/dc-general-contao-frontend": "^2.6@dev",
+    "contao-community-alliance/events-contao-bindings": "^6.0@dev",
+    "contao-community-alliance/translator": "^2.7@dev",
+    "contao-community-alliance/url-builder": "^2.2@dev",
+    "contao/core-bundle": "^6.0",
     "symfony/config": "^7.4 || ^8.0",
     "symfony/dependency-injection": "^7.4 || ^8.0",
     "symfony/http-kernel": "^7.4 || ^8.0"
@@ -63,7 +63,7 @@
   },
   "extra": {
     "branch-alias": {
-      "dev-feature/2.5.0": "2.5.x-dev"
+      "dev-feature/2.6.0": "2.6.x-dev"
     },
     "contao-manager-plugin": "ContaoCommunityAlliance\\FormTextFieldMultipleBundle\\ContaoManager\\Plugin"
   }
